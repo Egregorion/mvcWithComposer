@@ -1,0 +1,1 @@
+{"version":1,"defects":{"RouterTest::isRouteAddedToRouter":7},"times":{"RouterTest::isRouterEmptyOnInitialization":0.008,"RouterTest::isRouteAddedToRouter":0.002,"RouterTest::isExceptionThrownOnBadRouteArgument":0.002}}
