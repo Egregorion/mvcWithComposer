@@ -16,7 +16,7 @@ class Controller
     protected function render(string $view_name, $data = [])
     {
         // création de variables à partir du tableau associatif nommé $data
-        // par exemple, si le tableau contient [ 'nom' => 'Lovelace', 'prenom' => 'Ada' ] deux variables $nom et $prenom seront créées
+        // par exemple, si le tableau contient [ 'nom' => 'Lovecraft', 'prenom' => 'Howard Philips' ] deux variables $nom et $prenom seront créées
         extract($data);
 
         header("Cache-Control: no-cache, no-store, must-revalidate");

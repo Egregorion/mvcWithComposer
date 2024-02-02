@@ -10,7 +10,7 @@ class Router
     /**
      * Function permettant d'ajouter une route.
      * 
-     * @param $route Le chemin de la route par exemple pour "www.gmail.com/login" la route est "/login"
+     * @param $route Le chemin de la route (par exemple "/" pour la page d'accueil)
      * @param $controller Le nom du controller
      * @param $action Nom de la fonction du controller qui va gérer la requête
      */
@@ -55,30 +55,3 @@ class Router
         throw new \Exception("No route found for URI: $uri");
     }
 }
-
-
-
-/*foreach ($this->routes as $routePattern => $routeConfig) {
-    var_dump("Matching Route Pattern: $routePattern");
-    // Check if the URI matches the route pattern
-    if (preg_match("#$routePattern#", $uri, $matches)) {
-        
-        // Remove the first element from matches (full URI match)
-        array_shift($matches);
-
-        // Merge route parameters with their values
-        $routeParams = array_combine(array_keys($matches), array_values($matches));
-        
-        // Get the controller and action
-        $controllerClass = $routeConfig['controller'];
-        $action = $routeConfig['action'];
-
-        // Instantiate the controller
-        $controller = new $controllerClass();
-
-        // Call the action with route parameters
-        $controller->$action($routeParams);
-
-        return;
-    }
-}*/
