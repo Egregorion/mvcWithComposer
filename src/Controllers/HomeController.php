@@ -9,6 +9,8 @@ class HomeController extends Controller
 {
     public function index() 
     {
+        session_start();
+
         $posts = PostManager::getAllPosts();
 
         $this->render('Home', [

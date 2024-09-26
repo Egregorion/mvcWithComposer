@@ -1,7 +1,6 @@
 <?php
 
 use App\Controllers\HomeController;
-use App\Controllers\PostController;
 use App\Core\Router;
 use PHPUnit\Framework\TestCase;
 
